@@ -11,12 +11,12 @@ import javax.imageio.ImageIO;
 import processing.core.PImage;
 
 /**
- * 手机摄像头捕获图像
+ * processing android capture
  * 
- * @author only乐秘
+ * @author onlylemi
  *
  */
-public class PhoneCapturer implements Runnable {
+public class PhoneCapture implements Runnable {
 
 	private ServerSocket ss = null;
 	private BufferedImage image;
@@ -28,22 +28,20 @@ public class PhoneCapturer implements Runnable {
 	private long imageFrameRate;
 
 	private Thread thread;
-
 	private long start, end;
-
 	private boolean flag;
 
 	/**
-	 * 手机摄像头捕获图像构造函数
+	 * phone capture construct
 	 * 
 	 * @param width
-	 *            获取图像的宽
+	 *            the width of image
 	 * @param height
-	 *            获取图像的高
+	 *            the height of image
 	 * @param imageFrameRate
-	 *            刷新速率
+	 *            the frame rate of getting image
 	 */
-	public PhoneCapturer(int width, int height, long imageFrameRate) {
+	public PhoneCapture(int width, int height, long imageFrameRate) {
 		this.width = width;
 		this.height = height;
 		this.imageFrameRate = imageFrameRate;
@@ -57,7 +55,6 @@ public class PhoneCapturer implements Runnable {
 		}
 
 		pImage = new PImage(width, height, PImage.RGB);
-
 		thread = new Thread(this);
 	}
 
@@ -91,7 +88,7 @@ public class PhoneCapturer implements Runnable {
 	}
 
 	/**
-	 * 得到手机摄像头的图像
+	 * get pimage from phone camera capture
 	 * 
 	 * @return
 	 */
@@ -104,17 +101,48 @@ public class PhoneCapturer implements Runnable {
 	}
 
 	/**
-	 * 得到手机所识别的颜色
+	 * get the the middle color of phone screen
 	 * 
 	 * @return
 	 */
 	public int getColor() {
-		color = image.getRGB(image.getWidth() / 2, image.getHeight() / 2);
+		if (image != null) {
+			color = image.getRGB(image.getWidth() / 2, image.getHeight() / 2);
+		}
 		return color;
 	}
 
+	/**
+	 * start phone capture
+	 */
 	public void start() {
 		thread.start();
+	}
+
+	/**
+	 * restart phone capture
+	 */
+	public void restart() {
+		thread.resume();
+	}
+
+	/**
+	 * stop phone capture
+	 */
+	public void pause() {
+		thread.suspend();
+	}
+
+	/**
+	 * exit phone capture
+	 */
+	public void exit() {
+		try {
+			thread.destroy();
+			ss.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 }
