@@ -3,9 +3,21 @@ This library tries to transfer data between`processing` and `android`. I make a 
 
 It's only beta named **''Beta1.0''**. Welcome to try it and if there is a problem, please contact me or new a issues.
 
-####  **android app project : [https://github.com/onlylemi/AndroidCapture](https://github.com/onlylemi/AndroidCapture)**
+## Folder
+* **android-apk** 
+  android phone client app in it.
+*  **examples**
+  There are some primitive examples in it. The users download them and load `.jar` file in the project. The `.jar` file is set the named `'code'` folder.
+*  **library**
+  The `processing-android-capture.jar` file in it.
+*  **src** 
+  The source code of this lib int it.
 
-**A primitive example to get phone camera image :**
+## Android App
+ **the source code of app : [https://github.com/onlylemi/AndroidCapture](https://github.com/onlylemi/AndroidCapture)**
+
+## Examples
+**1. A primitive example to get phone camera image :**
 ```processing
 import com.onlylemi.processing.android.capture.*;
 
@@ -15,7 +27,7 @@ PImage img;
 void setup() {
   size(720, 480);
   ac = new AndroidCapture(width, height, 30);
-  pc.start();
+  ac.start();
 }
 
 void draw() {
@@ -27,9 +39,12 @@ void exit() {
   ac.exit();
 }
 ```
+
+
 --
 
-**A primitive example to get the middle color of phone camera :**
+
+**2. A primitive example to get the middle color of phone camera :**
 ```processing
 import com.onlylemi.processing.android.capture.*;
 
@@ -39,7 +54,7 @@ void setup() {
   size(720, 480);
   
   ac = new AndroidCapture(width, height, 20);
-  pc.start();
+  ac.start();
 }
 
 void draw(){
@@ -56,3 +71,6 @@ void exit(){
   ac.exit();
 }
 ```
+
+
+
