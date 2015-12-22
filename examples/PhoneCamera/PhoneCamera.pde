@@ -1,19 +1,19 @@
 import com.onlylemi.processing.android.capture.*;
 
-PhoneCapture pc;
+AndroidCapture ac;
 PImage img;
 
 void setup() {
   size(1280, 720);
-  pc = new PhoneCapture(width, height, 30);
-  pc.start();
+  ac = new AndroidCapture(width, height, 30);
+  ac.start();
 }
 
 void draw() {
-  img = pc.getPImage();
+  img = ac.getPImage();
   image(img, 0, 0);
 }
 
 void exit() {
-  pc.exit();
+  ac.exit();
 }

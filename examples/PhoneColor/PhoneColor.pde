@@ -1,12 +1,12 @@
 import com.onlylemi.processing.android.capture.*;
 
-PhoneCapture pc;
+AndroidCapture ac;
 
 void setup() {
   size(720, 480);
   
-  pc = new PhoneCapture(width, height, 20);
-  pc.start();
+  ac = new AndroidCapture(width, height, 20);
+  ac.start();
 }
 
 void draw(){
@@ -14,11 +14,11 @@ void draw(){
   
   translate(width / 2, height / 2);
   
-  int c = pc.getColor();
+  int c = ac.getColor();
   fill(c);
   ellipse(0, 0, 300, 300);
 }
 
 void exit(){
-  pc.exit();
+  ac.exit();
 }

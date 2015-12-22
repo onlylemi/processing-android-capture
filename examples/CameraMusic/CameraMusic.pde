@@ -1,6 +1,6 @@
 import com.onlylemi.processing.android.capture.*;
 
-PhoneCapture pc;
+AndroidCapyure ac;
 PImage img;
 PImage mask;
 
@@ -11,8 +11,8 @@ void setup(){
   imageMode(CENTER);
   initAudio();
   
-  pc = new PhoneCapture(width, height, 30);
-  pc.start();
+  ac = new AndroidCapyure(width, height, 30);
+  ac.start();
   
   mask = loadImage("mask.png");
 }
@@ -23,7 +23,7 @@ void draw(){
   rect(0, 0, width, height);
   
   tint(255,25);
-  img = pc.getPImage();
+  img = ac.getPImage();
   img.mask(mask);
   float level = audio.mix.level() * 5;
   img.resize((int) (width * level), (int) (height * level));
@@ -31,5 +31,5 @@ void draw(){
 }
 
 void exit(){
-  pc.exit();
+  ac.exit();
 }

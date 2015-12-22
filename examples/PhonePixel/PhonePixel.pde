@@ -1,7 +1,7 @@
 import com.onlylemi.processing.android.capture.*;
 import peasy.PeasyCam;
 
-PhoneCapture pc;
+AndroidCapture ac;
 PImage img;
 PeasyCam cam;
 
@@ -10,14 +10,14 @@ void setup() {
 
   cam = new PeasyCam(this, 500);
 
-  pc = new PhoneCapture(width, height, 20);
-  pc.start();
+  ac = new AndroidCapture(width, height, 20);
+  ac.start();
 }
 
 void draw(){
   background(0);
   translate(-width / 2, -height / 2);
-  img = pc.getPImage();
+  img = ac.getPImage();
   int steps = 10;
   for (int i = 0; i < width / steps; i++) {
     for (int j = 0; j < height / steps; j++) {
@@ -34,5 +34,5 @@ void draw(){
 }
 
 void exit(){
-  pc.exit();
+  ac.exit();
 }
