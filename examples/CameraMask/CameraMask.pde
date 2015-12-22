@@ -1,6 +1,6 @@
 import com.onlylemi.processing.android.capture.*;
 
-PhoneCapture pc;
+AndroidCapture ac;
 PImage img;
 PImage mask;
 
@@ -10,8 +10,8 @@ void setup(){
   background(0);
   imageMode(CENTER);
   
-  pc = new PhoneCapture(width, height, 30);
-  pc.start();
+  ac = new AndroidCapture(width, height, 30);
+  ac.start();
   
   mask = loadImage("mask.png");
 }
@@ -22,11 +22,11 @@ void draw(){
   rect(0, 0, width, height);
   
   tint(255,25);
-  img = pc.getPImage();
+  img = ac.getPImage();
   img.mask(mask);
   image(img, width / 2, height / 2);
 }
 
 void exit(){
-  pc.exit();
+  ac.exit();
 }
