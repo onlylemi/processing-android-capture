@@ -1,5 +1,5 @@
 # Processing-Android Camera Capture Lib
-This library tries to transfer data between`processing` and `android`. I make a android app to capture the real-time video from ''Android camera''  through the socket to the server (processing server) with `WiFi`. The users use this lib to get phone camera capture in processing, then can do image processing. 
+This library tries to transfer data between `processing` and `android`. I make a android app to capture the real-time video from ''Android camera''  through the socket to the server (processing server) with `WiFi`. The users use this lib to get phone camera capture in processing, then can do image processing. 
 
 It's only beta named **''Beta1.0''**. Welcome to try it and if there is a problem, please contact me or new a issues.
 
