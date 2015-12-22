@@ -27,7 +27,7 @@ void exit() {
   ac.exit();
 }
 ```
----
+--
 
 **A primitive example to get the middle color of phone camera :**
 ```processing
