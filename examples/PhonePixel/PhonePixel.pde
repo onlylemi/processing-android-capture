@@ -32,7 +32,3 @@ void draw(){
     }
   }
 }
-
-void exit(){
-  ac.exit();
-}

@@ -4,7 +4,7 @@ AndroidCapture ac;
 PImage img;
 
 void setup() {
-  size(1280, 720);
+  size(720, 480);
   ac = new AndroidCapture(width, height, 30);
   ac.start();
 }
@@ -12,8 +12,4 @@ void setup() {
 void draw() {
   img = ac.getPImage();
   image(img, 0, 0);
-}
-
-void exit() {
-  ac.exit();
 }

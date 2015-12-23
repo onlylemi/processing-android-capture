@@ -18,7 +18,3 @@ void draw(){
   fill(c);
   ellipse(0, 0, 300, 300);
 }
-
-void exit(){
-  ac.exit();
-}

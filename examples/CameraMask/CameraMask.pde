@@ -26,7 +26,3 @@ void draw(){
   img.mask(mask);
   image(img, width / 2, height / 2);
 }
-
-void exit(){
-  ac.exit();
-}

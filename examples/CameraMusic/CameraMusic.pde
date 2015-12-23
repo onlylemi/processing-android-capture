@@ -29,7 +29,3 @@ void draw(){
   img.resize((int) (width * level), (int) (height * level));
   image(img, width / 2, height / 2);
 }
-
-void exit(){
-  ac.exit();
-}
