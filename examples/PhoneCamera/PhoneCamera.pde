@@ -10,6 +10,6 @@ void setup() {
 }
 
 void draw() {
-  img = ac.getPImage();
+  img = ac.getCameraImage();
   image(img, 0, 0);
 }
