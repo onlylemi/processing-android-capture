@@ -1,11 +1,11 @@
 import com.onlylemi.processing.android.capture.*;
 
-AndroidCapture ac;
+PAndroidCamera ac;
 PImage img;
 
 void setup() {
   size(720, 480);
-  ac = new AndroidCapture(width, height, 30);
+  ac = new PAndroidCamera(width, height, 30);
   ac.start();
 }
 

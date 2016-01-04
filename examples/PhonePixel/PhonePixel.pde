@@ -1,7 +1,7 @@
 import com.onlylemi.processing.android.capture.*;
 import peasy.PeasyCam;
 
-AndroidCapture ac;
+PAndroidCamera ac;
 PImage img;
 PeasyCam cam;
 
@@ -10,7 +10,7 @@ void setup() {
 
   cam = new PeasyCam(this, 500);
 
-  ac = new AndroidCapture(width, height, 20);
+  ac = new PAndroidCamera(width, height, 20);
   ac.start();
 }
 
