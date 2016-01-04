@@ -88,7 +88,7 @@ public class PAndroidCamera implements Runnable {
      *
      * @return the frame of android camera
      */
-    public PImage getPImage() {
+    public PImage getCameraImage() {
         if (image != null) {
             pImage = new PImage(image);
             pImage.resize(width, height);
