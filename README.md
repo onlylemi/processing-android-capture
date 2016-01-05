@@ -19,8 +19,8 @@ It will work in [openframeworks](http://www.openframeworks.cc/). I will make it 
   The source code of this lib in it.
 
 ## Android App
- **the source code of app : [https://github.com/onlylemi/AndroidCapture](https://github.com/onlylemi/AndroidCapture)**
- my test phone: [meilan note2](http://www.meizu.com/products/meilannote2/spec.html) and **android5.1**
+ **the source code of app :** [https://github.com/onlylemi/AndroidCapture](https://github.com/onlylemi/AndroidCapture)  
+ **my test phone:** [meilan note2](http://www.meizu.com/products/meilannote2/spec.html) and `android5.1`
 
 ## Examples
 ### PAndroid Camera: 
@@ -220,6 +220,6 @@ void draw() {
 ```
 
 ## CONTACT
-**Eamil:** xiaomi_0623(AT)163.com
-**Wechat:** (AT)xiaomi-0623
+**Eamil:** xiaomi_0623(AT)163.com  
+**Wechat:** (AT)xiaomi-0623  
 **Weibo:** [http://www.weibo.com/xiaomi0623](http://www.weibo.com/xiaomi0623)
