@@ -10,7 +10,8 @@ It will work in [openframeworks](http://www.openframeworks.cc/). I will make it 
 
 ## Folder
 * **android-apk** 
-  android phone client app in it.
+  android phone client app in it.  
+  wandoujia:[http://www.wandoujia.com/apps/com.onlylemi.android.capture](http://www.wandoujia.com/apps/com.onlylemi.android.capture)
 *  **examples**
   There are some primitive examples in it. The users download them and load `.jar` file in the project. The `.jar` file is set the named `'code'` folder.
 *  **library**
