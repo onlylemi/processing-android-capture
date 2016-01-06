@@ -27,7 +27,7 @@
 
 ## 使用方法
 1. 首先你需要在github上去下载processing-android-capture.jar及android客户端app  
-**android app豌豆荚地址：** http://www.wandoujia.com/apps/com.onlylemi.android.capture）
+**android app豌豆荚地址：** (http://www.wandoujia.com/apps/com.onlylemi.android.capture)
 2. 在手机上安装app，processing项目中导入jar包到code文件夹下
 3. pde文件中调用。一下分为`camera`、`sensor`两种情况进行阐释
 
@@ -159,30 +159,30 @@ void draw() {
 
 ## 具体示例
 代码1：[https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/PhoneCamera](https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/PhoneCamera)  
-效果1：
+效果1：  
 ![](https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/camera_image.gif)
 
 ---
 
 代码2：[https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraColor](https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraColor)  
-效果2：
+效果2：  
 ![](https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/camera_color.gif)
 
 ---
 
 代码3：[https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/AccSensor](https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidSensor/AccSensor)  
-效果3：
+效果3：  
 ![](https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/sensor_color.gif)
 
 --- 
 
 代码4：[https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraMusic](https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraMusic)  
-效果4：
+效果4：  
 ![](https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/camera_music.gif)
 
 ---
 
-代码4：[https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraPixel](https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraPixel)
+代码4：[https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraPixel](https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraPixel)  
 效果4：
 ![](https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/camera_pixel.gif)
 
