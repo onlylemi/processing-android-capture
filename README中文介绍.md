@@ -186,8 +186,8 @@ void draw() {
 
 ---
 
-代码4：[https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraPixel](https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraPixel)  
-效果4：  
+代码5：[https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraPixel](https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraPixel)  
+效果5：  
 ![](https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/camera_pixel.gif)
 
 ## END
