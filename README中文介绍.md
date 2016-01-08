@@ -158,7 +158,7 @@ void draw() {
 至此 **PAndroidSensor** 类的功能就介绍完毕，具体效果在后面的实例中查看。
 
 ## 具体示例
-代码1：[https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/PhoneCamera](https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/PhoneCamera)
+代码1：[https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/PhoneCamera](https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraImage)
 
 效果1：  
 ![](https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/camera_image.gif)
@@ -187,7 +187,7 @@ void draw() {
 ---
 
 代码4：[https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraPixel](https://github.com/onlylemi/processing-android-capture/tree/master/examples/AndroidCamera/CameraPixel)  
-效果4：
+效果4：  
 ![](https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/camera_pixel.gif)
 
 ## END
