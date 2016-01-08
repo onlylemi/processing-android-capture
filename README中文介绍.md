@@ -193,8 +193,8 @@ void draw() {
 ## END
 本篇文章中所有提到的代码都是该**lib**提供的[examples](https://github.com/onlylemi/processing-android-capture/tree/master/examples)，都可以在**github**上下载到，因为processing是由java语言实现的，所以整个项目我是采用 [IntelliJ IDEA](https://www.jetbrains.com/idea/) IDE所实现（建议大家使用，写代码so爽），然后再转到**processing**下的。项目的android客户端使用 [Android studio](http://developer.android.com/sdk/index.html) 实现。所有代码都已开源到**github**上，欢迎大家指导批评。
 
-Lib地址：[https://github.com/onlylemi/processing-android-capture](https://github.com/onlylemi/processing-android-capture)
-IDEA原项目地址：[https://github.com/onlylemi/P5AndroidCapture](https://github.com/onlylemi/P5AndroidCapture)
+Lib地址：[https://github.com/onlylemi/processing-android-capture](https://github.com/onlylemi/processing-android-capture)  
+IDEA原项目地址：[https://github.com/onlylemi/P5AndroidCapture](https://github.com/onlylemi/P5AndroidCapture)  
 Android APP地址：[https://github.com/onlylemi/AndroidCapture](https://github.com/onlylemi/AndroidCapture)
 
 ## CONTACT
