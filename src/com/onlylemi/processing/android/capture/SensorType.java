@@ -2,10 +2,12 @@ package com.onlylemi.processing.android.capture;
 
 /**
  * some sensor type in this final class
+ * <p>
+ * https://github.com/onlylemi/processing-android-capture
  *
  * @author onlylemi
  */
-public final class PSensorType {
+public final class SensorType {
 
     public final static String ANDROID_SENSOR = "ANDROID_SENSOR";
 

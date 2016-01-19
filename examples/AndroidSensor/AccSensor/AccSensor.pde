@@ -1,13 +1,13 @@
 import com.onlylemi.processing.android.capture.*;
 
-PAndroidSensor as;
+AndroidSensor as;
 
 void setup() {
 	size(720, 480);
 
 	background(0);
 
-	as = new PAndroidSensor(0);
+	as = new AndroidSensor(0);
 	as.start();
 }
 

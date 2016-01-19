@@ -11,10 +11,12 @@ import java.net.Socket;
 
 /**
  * processing android camera
+ * <p>
+ * https://github.com/onlylemi/processing-android-capture
  *
  * @author onlylemi
  */
-public class PAndroidCamera implements Runnable {
+public class AndroidCamera implements Runnable {
 
     private ServerSocket ss = null;
     private BufferedImage image;
@@ -30,13 +32,13 @@ public class PAndroidCamera implements Runnable {
     private boolean flag;
 
     /**
-     * new a PAndroidCamera obj
+     * new a AndroidCamera obj
      *
      * @param width          the width of image
      * @param height         the height of image
      * @param imageFrameRate the frame rate of getting image
      */
-    public PAndroidCamera(int width, int height, long imageFrameRate) {
+    public AndroidCamera(int width, int height, long imageFrameRate) {
         this.width = width;
         this.height = height;
         this.imageFrameRate = imageFrameRate;

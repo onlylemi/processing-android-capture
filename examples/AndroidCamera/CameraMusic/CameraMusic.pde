@@ -1,6 +1,6 @@
 import com.onlylemi.processing.android.capture.*;
 
-PAndroidCamera ac;
+AndroidCamera ac;
 PImage img;
 PImage mask;
 
@@ -11,7 +11,7 @@ void setup(){
   imageMode(CENTER);
   initAudio();
   
-  ac = new PAndroidCamera(width, height, 30);
+  ac = new AndroidCamera(width, height, 30);
   ac.start();
   
   mask = loadImage("mask.png");
