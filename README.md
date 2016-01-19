@@ -1,7 +1,8 @@
 # Processing-Android Camera&Sensor Capture Lib
 This library tries to transfer data between [Processing](https://processing.org) and [Android](https://android.com). I make a android app to capture the real-time video from `"Android Camera"` and the real-time data from `"Android Sensor"` through the socket to the server (processing server) with `WiFi`. The users use this lib to get phone camera frame and sensors data in processing, then can do some interesting things. 
  
-The current version is **"2.0"**. Welcome to try it and if there is a problem, please contact me or new a issues. 
+## NOTICE
+The current version is **"2.0.1"**. Because of some library rule from processing.org, I only update some class name and delete 'P'. And other thing is same. Welcome to try it and if there is a problem, please contact me or new a issues. 
 
 **Latest release**: [https://github.com/onlylemi/processing-android-capture/releases](https://github.com/onlylemi/processing-android-capture/releases)
 
