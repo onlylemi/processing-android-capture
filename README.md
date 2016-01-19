@@ -122,50 +122,50 @@ void draw() {
 
   text(SensorType.TYPE_ACCELEROMETER + " : ", 60, 50);
   float[] values1 = as.getAccelerometerSensorValues();
-  //float[] values1 = as.getSensorValues(PSensorType.TYPE_ACCELEROMETER);
+  //float[] values1 = as.getSensorValues(SensorType.TYPE_ACCELEROMETER);
   text("X : " + values1[0], 250, 50);
   text("Y : " + values1[1], 400, 50);
   text("Z : " + values1[2], 550, 50);
 
   text(SensorType.TYPE_ORIENTATION + " : ", 60, 100);
   float[] values2 = as.getOrientationSensorValues();
-  //float[] values2 = as.getSensorValues(PSensorType.TYPE_ORIENTATION);
+  //float[] values2 = as.getSensorValues(SensorType.TYPE_ORIENTATION);
   text("X : " + values2[0], 250, 100);
   text("Y : " + values2[1], 400, 100);
   text("Z : " + values2[2], 550, 100);
 
   text(SensorType.TYPE_MAGNETIC_FIELD + " : ", 60, 150);
   float[] values3 = as.getMagneticFieldSensorValues();
-  //float[] values3 = as.getSensorValues(PSensorType.TYPE_MAGNETIC_FIELD);
+  //float[] values3 = as.getSensorValues(SensorType.TYPE_MAGNETIC_FIELD);
   text("X : " + values3[0], 250, 150);
   text("Y : " + values3[1], 400, 150);
   text("Z : " + values3[2], 550, 150);
 
   text(SensorType.TYPE_GYROSCOPE + " : ", 60, 200);
   float[] values4 = as.getGyroscopeSensorValues();
-  //float[] values4 = as.getSensorValues(PSensorType.TYPE_GYROSCOPE);
+  //float[] values4 = as.getSensorValues(SensorType.TYPE_GYROSCOPE);
   text("X : " + values4[0], 250, 200);
   text("Y : " + values4[1], 400, 200);
   text("Z : " + values4[2], 550, 200);
 
   text(SensorType.TYPE_LIGHT + " : ", 60, 250);
   float values5 = as.getLightSensorValues();
-  //float values5 = as.getSensorValues(PSensorType.TYPE_LIGHT)[0];
+  //float values5 = as.getSensorValues(SensorType.TYPE_LIGHT)[0];
   text("level : " + values5, 250, 250);
 
   text(SensorType.TYPE_PROXIMITY + " : ", 60, 300);
   float values6 = as.getProximitySensorValues();
-  //float values6 = as.getSensorValues(PSensorType.TYPE_PROXIMITY)[0];
+  //float values6 = as.getSensorValues(SensorType.TYPE_PROXIMITY)[0];
   text("distance : " + values6, 250, 300);
 
   text(SensorType.TYPE_PRESSURE + " : ", 60, 350);
   float values7 = as.getPressureSensorValues();
-  //float[] values7 = as.getSensorValues(PSensorType.TYPE_PRESSURE);
+  //float[] values7 = as.getSensorValues(SensorType.TYPE_PRESSURE);
   text("pressure : " + values7, 250, 350);
 
   text(SensorType.TYPE_TEMPERATURE + " : ", 60, 400);
   float values8 = as.getTemperatureSensorValues();
-  //float values8 = as.getSensorValues(PSensorType.TYPE_TEMPERATURE);
+  //float values8 = as.getSensorValues(SensorType.TYPE_TEMPERATURE);
   text("temperature : " + values8, 250, 400);
 }
 ```
