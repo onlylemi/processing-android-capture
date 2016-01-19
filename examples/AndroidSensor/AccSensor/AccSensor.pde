@@ -13,7 +13,7 @@ void setup() {
 
 void draw() {
 	// get accelerometer sensor value
-	//float[] values = as.getSensorValues(PSensorType.TYPE_ACCELEROMETER);
+	//float[] values = as.getSensorValues(SensorType.TYPE_ACCELEROMETER);
 	float[] values = as.getAccelerometerSensorValues();
 	float x = values[0];
 	float y = values[1];

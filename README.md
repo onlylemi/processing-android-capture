@@ -120,50 +120,50 @@ void draw() {
   fill(255);
   textSize(15);
 
-  text(PSensorType.TYPE_ACCELEROMETER + " : ", 60, 50);
+  text(SensorType.TYPE_ACCELEROMETER + " : ", 60, 50);
   float[] values1 = as.getAccelerometerSensorValues();
   //float[] values1 = as.getSensorValues(PSensorType.TYPE_ACCELEROMETER);
   text("X : " + values1[0], 250, 50);
   text("Y : " + values1[1], 400, 50);
   text("Z : " + values1[2], 550, 50);
 
-  text(PSensorType.TYPE_ORIENTATION + " : ", 60, 100);
+  text(SensorType.TYPE_ORIENTATION + " : ", 60, 100);
   float[] values2 = as.getOrientationSensorValues();
   //float[] values2 = as.getSensorValues(PSensorType.TYPE_ORIENTATION);
   text("X : " + values2[0], 250, 100);
   text("Y : " + values2[1], 400, 100);
   text("Z : " + values2[2], 550, 100);
 
-  text(PSensorType.TYPE_MAGNETIC_FIELD + " : ", 60, 150);
+  text(SensorType.TYPE_MAGNETIC_FIELD + " : ", 60, 150);
   float[] values3 = as.getMagneticFieldSensorValues();
   //float[] values3 = as.getSensorValues(PSensorType.TYPE_MAGNETIC_FIELD);
   text("X : " + values3[0], 250, 150);
   text("Y : " + values3[1], 400, 150);
   text("Z : " + values3[2], 550, 150);
 
-  text(PSensorType.TYPE_GYROSCOPE + " : ", 60, 200);
+  text(SensorType.TYPE_GYROSCOPE + " : ", 60, 200);
   float[] values4 = as.getGyroscopeSensorValues();
   //float[] values4 = as.getSensorValues(PSensorType.TYPE_GYROSCOPE);
   text("X : " + values4[0], 250, 200);
   text("Y : " + values4[1], 400, 200);
   text("Z : " + values4[2], 550, 200);
 
-  text(PSensorType.TYPE_LIGHT + " : ", 60, 250);
+  text(SensorType.TYPE_LIGHT + " : ", 60, 250);
   float values5 = as.getLightSensorValues();
   //float values5 = as.getSensorValues(PSensorType.TYPE_LIGHT)[0];
   text("level : " + values5, 250, 250);
 
-  text(PSensorType.TYPE_PROXIMITY + " : ", 60, 300);
+  text(SensorType.TYPE_PROXIMITY + " : ", 60, 300);
   float values6 = as.getProximitySensorValues();
   //float values6 = as.getSensorValues(PSensorType.TYPE_PROXIMITY)[0];
   text("distance : " + values6, 250, 300);
 
-  text(PSensorType.TYPE_PRESSURE + " : ", 60, 350);
+  text(SensorType.TYPE_PRESSURE + " : ", 60, 350);
   float values7 = as.getPressureSensorValues();
   //float[] values7 = as.getSensorValues(PSensorType.TYPE_PRESSURE);
   text("pressure : " + values7, 250, 350);
 
-  text(PSensorType.TYPE_TEMPERATURE + " : ", 60, 400);
+  text(SensorType.TYPE_TEMPERATURE + " : ", 60, 400);
   float values8 = as.getTemperatureSensorValues();
   //float values8 = as.getSensorValues(PSensorType.TYPE_TEMPERATURE);
   text("temperature : " + values8, 250, 400);
@@ -192,7 +192,7 @@ void setup() {
 
 void draw() {
   // get accelerometer sensor value
-  //float[] values = as.getSensorValues(PSensorType.TYPE_ACCELEROMETER);
+  //float[] values = as.getSensorValues(SensorType.TYPE_ACCELEROMETER);
   float[] values = as.getAccelerometerSensorValues();
   float x = values[0];
   float y = values[1];
