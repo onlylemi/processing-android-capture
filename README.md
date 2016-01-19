@@ -2,7 +2,7 @@
 This library tries to transfer data between [Processing](https://processing.org) and [Android](https://android.com). I make a android app to capture the real-time video from `"Android Camera"` and the real-time data from `"Android Sensor"` through the socket to the server (processing server) with `WiFi`. The users use this lib to get phone camera frame and sensors data in processing, then can do some interesting things. 
  
 ## NOTICE
-**The current version is "2.0.1". Because of some library rule from processing.org, I only update some class name and delete 'P'. And other thing is same.**
+**The current version is "2.0.1". Because of some library rules from processing.org, I only update some class name and delete 'P'. And other thing is same.**
 * PAndroidCamera --> AndroidCamera
 * PAndroidSensor --> AndroidSensor
 * PSensor --> Sensor
@@ -31,7 +31,7 @@ I develope the whole project in [IntelliJ IDEA](https://www.jetbrains.com/idea/)
  **my test phone:** [meilan note2](http://www.meizu.com/products/meilannote2/spec.html) and `android5.1`
 
 ## Examples
-### PAndroid Camera: 
+### Android Camera: 
 * The users use the `getCameraImage()` function to get android client phone camera frame and it will return a `PImage` object in processing. 
 *  The users use the `getColor()` function to get color from android phone camera and it return a `int` object. 
 
@@ -42,12 +42,12 @@ I develope the whole project in [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 ```processing
 import com.onlylemi.processing.android.capture.*;
 
-PAndroidCamera ac;
+AndroidCamera ac;
 PImage img;
 
 void setup() {
   size(720, 480);
-  ac = new PAndroidCamera(width, height, 30);
+  ac = new AndroidCamera(width, height, 30);
   ac.start();
 }
 
@@ -66,12 +66,12 @@ void draw() {
 ```processing
 import com.onlylemi.processing.android.capture.*;
 
-PAndroidCamera ac;
+AndroidCamera ac;
 
 void setup() {
   size(720, 480);
 
-  ac = new PAndroidCamera(width, height, 20);
+  ac = new AndroidCamera(width, height, 20);
   ac.start();
 }
 
@@ -86,17 +86,17 @@ void draw() {
 }
 ```
 
-### PAndroid Sensor: 
-There is a class named `PAndroidSensor` in this lib. And there are **8** sensors from android phone. The users get sensor type in class named `PSensorType`. 
+### Android Sensor: 
+There is a class named `AndroidSensor` in this lib. And there are **8** sensors from android phone. The users get sensor type in class named `SensorType`. 
 
- * PSensorType.TYPE_ACCELEROMETER 
- * PSensorType.TYPE_LIGHT 
- * PSensorType.TYPE_ORIENTATION 
- * PSensorType.TYPE_PROXIMITY 
- * PSensorType.TYPE_TEMPERATURE 
- * PSensorType.TYPE_PRESSURE 
- * PSensorType.TYPE_GYROSCOPE 
- * PSensorType.TYPE_MAGNETIC_FIELD 
+ * SensorType.TYPE_ACCELEROMETER 
+ * SensorType.TYPE_LIGHT 
+ * SensorType.TYPE_ORIENTATION 
+ * SensorType.TYPE_PROXIMITY 
+ * SensorType.TYPE_TEMPERATURE 
+ * SensorType.TYPE_PRESSURE 
+ * SensorType.TYPE_GYROSCOPE 
+ * SensorType.TYPE_MAGNETIC_FIELD 
 
 
 **1.  a example to get android sensor values:**
@@ -105,13 +105,13 @@ There is a class named `PAndroidSensor` in this lib. And there are **8** sensors
 ```processing
 import com.onlylemi.processing.android.capture.*;
 
-PAndroidSensor as;
+AndroidSensor as;
 
 void setup() {
   size(720, 480);
   background(0);
 
-  as = new PAndroidSensor(0);
+  as = new AndroidSensor(0);
   as.start();
 }
 
@@ -179,14 +179,14 @@ void draw() {
 ```processing
 import com.onlylemi.processing.android.capture.*;
 
-PAndroidSensor as;
+AndroidSensor as;
 
 void setup() {
   size(720, 480);
 
   background(0);
 
-  as = new PAndroidSensor(0);
+  as = new AndroidSensor(0);
   as.start();
 }
 
