@@ -22,7 +22,7 @@ I develope the whole project in [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 *  **examples**
   There are some primitive examples in it. The users download them and load `.jar` file in the project. The `.jar` file is set the named `'code'` folder.
 *  **library**
-  The `AndroidProcessingFroProcessing.jar` file in it.
+  The `AndroidProcessingForProcessing.jar` file in it.
 *  **src** 
   The source code of this lib in it.
 
