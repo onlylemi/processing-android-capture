@@ -17,7 +17,7 @@ I make a android app to capture the real-time video from `"Android Camera"` and 
 Welcome to try it and if there is a problem, please contact me or [new a issues](https://github.com/onlylemi/processing-android-capture/issues/new). 
 
 ## Android App
- **Repository** :  [https://github.com/onlylemi/AndroidCapture](https://github.com/onlylemi/AndroidCapture).  develope in [IntelliJ IDEA](https://www.jetbrains.com/idea/).
+ **Repository** :  [https://github.com/onlylemi/AndroidCapture](https://github.com/onlylemi/AndroidCapture).  develope in [IntelliJ IDEA](https://www.jetbrains.com/idea/).  
  **My test phone** : [meilan note2](http://www.meizu.com/products/meilannote2/spec.html) and `android5.1`
 
 ## DOWNLOAD
