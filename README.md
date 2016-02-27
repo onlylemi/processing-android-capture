@@ -1,22 +1,43 @@
-# Processing-Android Camera&Sensor Capture Lib
-This library tries to transfer data between [Processing](https://processing.org) and [Android](https://android.com). I make a android app to capture the real-time video from `"Android Camera"` and the real-time data from `"Android Sensor"` through the socket to the server (processing server) with `WiFi`. The users use this lib to get phone camera frame and sensors data in processing, then can do some interesting things. 
+# AndroidCapture For Processing
+
+**This library tries to transfer data between [Processing](https://processing.org) and [Android](https://android.com).** 
+
+I make a android app to capture the real-time video from `"Android Camera"` and the real-time data from `"Android Sensor"` through the socket to the server (processing server) with `WiFi`. The users use this lib to get phone camera frame and sensors data in processing, then can do some interesting things. 
  
-## NOTICE
-**The current version is "2.0.1". Because of some library rules from processing.org, I only update some class name and delete 'P'. And other thing is same.**
+**Chinese Users** : Please look [Chinese Introduce](https://onlylemi.github.io/projects/processing-android-capture)
+ 
+> ### NOTICE
+**The current version is "2.0.1". Because of some library rules from processing.org, I only update some class name and delete 'P'. And other thing is same.** 
+> 
 * PAndroidCamera --> AndroidCamera
 * PAndroidSensor --> AndroidSensor
 * PSensor --> Sensor
 * PSensorType --> SensorType
 
-Welcome to try it and if there is a problem, please contact me or new a issues. 
+Welcome to try it and if there is a problem, please contact me or [new a issues](https://github.com/onlylemi/processing-android-capture/issues/new). 
 
-**Latest release**: [https://github.com/onlylemi/processing-android-capture/releases](https://github.com/onlylemi/processing-android-capture/releases)
+## Android App
+ **Repository** :  [https://github.com/onlylemi/AndroidCapture](https://github.com/onlylemi/AndroidCapture).  develope in [IntelliJ IDEA](https://www.jetbrains.com/idea/).
+ **My test phone** : [meilan note2](http://www.meizu.com/products/meilannote2/spec.html) and `android5.1`
 
-I develope the whole project in [IntelliJ IDEA](https://www.jetbrains.com/idea/). The address of original project source: [https://github.com/onlylemi/P5AndroidCapture](https://github.com/onlylemi/AndroidCapture)
+## DOWNLOAD
+**Latest release**: [v2.0.1](https://github.com/onlylemi/processing-android-capture/releases)
 
 
+
+## Installation
+* **Lib** Download the [latest library release](https://github.com/onlylemi/processing-android-capture/releases) and follow the steps described in the [Processing wiki](https://github.com/processing/processing/wiki/How-to-Install-a-Contributed-Library).
+* **Android Configuration** 
+  * [download](https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/android-apk/PAndroidCapture.apk) and install APK to your mobile phone
+  * open this software and slide out from the left side of the screen. You will see the configuration view. And click `Setting IP`, then input `the local address of your computer`. You must ensure that your mobile phone and your computer in the same Wifi.
+
+> ### local address of your computer
+* Windows --> look [here](http://www.howtogeek.com/117371/how-to-find-your-computers-private-public-ip-addresses/)
+* Mac --> look [here](http://www.wikihow.com/Find-Your-IP-Address-on-a-Mac)
+* Linux --> look [here](http://www.wikihow.com/Check-the-IP-Address-in-Linux)
+  
 ## Folder
-* **android-apk** 
+* **android-apk**  
   android phone client app in it.  
   wandoujia:[http://www.wandoujia.com/apps/com.onlylemi.android.capture](http://www.wandoujia.com/apps/com.onlylemi.android.capture)
 *  **examples**
@@ -25,10 +46,6 @@ I develope the whole project in [IntelliJ IDEA](https://www.jetbrains.com/idea/)
   The `AndroidProcessingForProcessing.jar` file in it.
 *  **src** 
   The source code of this lib in it.
-
-## Android App
- **the source code of app :** [https://github.com/onlylemi/AndroidCapture](https://github.com/onlylemi/AndroidCapture)  
- **my test phone:** [meilan note2](http://www.meizu.com/products/meilannote2/spec.html) and `android5.1`
 
 ## Examples
 ### Android Camera: 
@@ -229,5 +246,3 @@ void draw() {
 
 ## CONTACT
 **Eamil:** xiaomi_0623(AT)163.com  
-**Wechat:** (AT)xiaomi-0623  
-**Weibo:** [http://www.weibo.com/xiaomi0623](http://www.weibo.com/xiaomi0623)
