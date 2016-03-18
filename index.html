@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>AndroidCapture For Processing by onlylemi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">AndroidCapture For Processing</h1>
+      <h2 class="project-tagline">This library tries to transfer data between Processing and Android.</h2>
+      <a href="https://github.com/onlylemi/processing-android-capture" class="btn">View on GitHub</a>
+      <a href="https://github.com/onlylemi/processing-android-capture/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/onlylemi/processing-android-capture/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="androidcapture-for-processing" class="anchor" href="#androidcapture-for-processing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>AndroidCapture For Processing</h1>
+
+<p><strong>This library tries to transfer data between <a href="https://processing.org">Processing</a> and <a href="https://android.com">Android</a>.</strong> </p>
+
+<p>I make a android app to capture the real-time video from <code>"Android Camera"</code> and the real-time data from <code>"Android Sensor"</code> through the socket to the server (processing server) with <code>WiFi</code>. The users use this lib to get phone camera frame and sensors data in processing, then can do some interesting things. </p>
+
+<p><strong>Chinese Users</strong> : Please look <a href="https://onlylemi.github.io/projects/processing-android-capture">Chinese Introduce</a></p>
+
+<blockquote>
+<h3>
+<a id="notice" class="anchor" href="#notice" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NOTICE</h3>
+
+<p><strong>The current version is "2.0.1". Because of some library rules from processing.org, I only update some class name and delete 'P'. And other thing is same.</strong> </p>
+
+<ul>
+<li>PAndroidCamera --&gt; AndroidCamera</li>
+<li>PAndroidSensor --&gt; AndroidSensor</li>
+<li>PSensor --&gt; Sensor</li>
+<li>PSensorType --&gt; SensorType</li>
+</ul>
+</blockquote>
+
+<p>Welcome to try it and if there is a problem, please contact me or <a href="https://github.com/onlylemi/processing-android-capture/issues/new">new a issues</a>. </p>
+
+<h2>
+<a id="android-app" class="anchor" href="#android-app" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Android App</h2>
+
+<p><strong>Repository</strong> :  <a href="https://github.com/onlylemi/AndroidCapture">https://github.com/onlylemi/AndroidCapture</a>.  develope in <a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a>.<br>
+ <strong>My test phone</strong> : <a href="http://www.meizu.com/products/meilannote2/spec.html">meilan note2</a> and <code>android5.1</code></p>
+
+<h2>
+<a id="download" class="anchor" href="#download" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>DOWNLOAD</h2>
+
+<p><strong>Latest release</strong>: <a href="https://github.com/onlylemi/processing-android-capture/releases">v2.0.1</a></p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
+
+<ul>
+<li>
+<strong>Lib</strong> Download the <a href="https://github.com/onlylemi/processing-android-capture/releases">latest library release</a> and follow the steps described in the <a href="https://github.com/processing/processing/wiki/How-to-Install-a-Contributed-Library">Processing wiki</a>.</li>
+<li>
+<strong>Android Configuration</strong> 
+
+<ul>
+<li>
+<a href="https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/android-apk/PAndroidCapture.apk">download</a> and install APK to your mobile phone</li>
+<li>open this software and slide out from the left side of the screen. You will see the configuration view. And click <code>Setting IP</code>, then input <code>the local address of your computer</code>. You must ensure that your mobile phone and your computer in the same Wifi.</li>
+</ul>
+</li>
+</ul>
+
+<blockquote>
+<h3>
+<a id="local-address-of-your-computer" class="anchor" href="#local-address-of-your-computer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>local address of your computer</h3>
+
+<ul>
+<li>Windows --&gt; look <a href="http://www.howtogeek.com/117371/how-to-find-your-computers-private-public-ip-addresses/">here</a>
+</li>
+<li>Mac --&gt; look <a href="http://www.wikihow.com/Find-Your-IP-Address-on-a-Mac">here</a>
+</li>
+<li>Linux --&gt; look <a href="http://www.wikihow.com/Check-the-IP-Address-in-Linux">here</a>
+</li>
+</ul>
+</blockquote>
+
+<h2>
+<a id="folder" class="anchor" href="#folder" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Folder</h2>
+
+<ul>
+<li>
+<strong>android-apk</strong><br>
+android phone client app in it.<br>
+wandoujia:<a href="http://www.wandoujia.com/apps/com.onlylemi.android.capture">http://www.wandoujia.com/apps/com.onlylemi.android.capture</a>
+</li>
+<li> <strong>examples</strong>
+There are some primitive examples in it. The users download them and load <code>.jar</code> file in the project. The <code>.jar</code> file is set the named <code>'code'</code> folder.</li>
+<li> <strong>library</strong>
+The <code>AndroidProcessingForProcessing.jar</code> file in it.</li>
+<li> <strong>src</strong> 
+The source code of this lib in it.</li>
+</ul>
+
+<h2>
+<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Examples</h2>
+
+<h3>
+<a id="android-camera" class="anchor" href="#android-camera" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Android Camera:</h3>
+
+<ul>
+<li>The users use the <code>getCameraImage()</code> function to get android client phone camera frame and it will return a <code>PImage</code> object in processing. </li>
+<li> The users use the <code>getColor()</code> function to get color from android phone camera and it return a <code>int</code> object. </li>
+</ul>
+
+<p><strong>1. A primitive example to get phone camera image :</strong></p>
+
+<p><img src="https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/camera_image.gif" alt="android camera"></p>
+
+<div class="highlight highlight-source-processing"><pre><span class="pl-k">import</span> <span class="pl-smi">com.onlylemi.processing.android.capture.*</span>;
+
+<span class="pl-k">AndroidCamera</span> ac;
+<span class="pl-c1">PImage</span> img;
+
+<span class="pl-k">void</span> <span class="pl-en">setup</span>() {
+  <span class="pl-c1">size</span>(<span class="pl-c1">720</span>, <span class="pl-c1">480</span>);
+  ac <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-k">AndroidCamera</span>(<span class="pl-smi">width</span>, <span class="pl-smi">height</span>, <span class="pl-c1">30</span>);
+  ac<span class="pl-k">.</span>start();
+}
+
+<span class="pl-k">void</span> <span class="pl-en">draw</span>() {
+  <span class="pl-c">// get android camera frame</span>
+  img <span class="pl-k">=</span> ac<span class="pl-k">.</span>getCameraImage();
+  <span class="pl-c1">image</span>(img, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>);
+}</pre></div>
+
+<h2></h2>
+
+<p><strong>2. A primitive example to get the middle color of phone camera :</strong></p>
+
+<p><img src="https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/camera_color.gif" alt="android camera color"></p>
+
+<div class="highlight highlight-source-processing"><pre><span class="pl-k">import</span> <span class="pl-smi">com.onlylemi.processing.android.capture.*</span>;
+
+<span class="pl-k">AndroidCamera</span> ac;
+
+<span class="pl-k">void</span> <span class="pl-en">setup</span>() {
+  <span class="pl-c1">size</span>(<span class="pl-c1">720</span>, <span class="pl-c1">480</span>);
+
+  ac <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-k">AndroidCamera</span>(<span class="pl-smi">width</span>, <span class="pl-smi">height</span>, <span class="pl-c1">20</span>);
+  ac<span class="pl-k">.</span>start();
+}
+
+<span class="pl-k">void</span> <span class="pl-en">draw</span>() {
+  <span class="pl-c1">background</span>(<span class="pl-c1">0</span>);
+  <span class="pl-c1">translate</span>(<span class="pl-smi">width</span> <span class="pl-k">/</span> <span class="pl-c1">2</span>, <span class="pl-smi">height</span> <span class="pl-k">/</span> <span class="pl-c1">2</span>);
+
+  <span class="pl-c">// get color from android camera</span>
+  <span class="pl-k">int</span> c <span class="pl-k">=</span> ac<span class="pl-k">.</span>getColor();
+  <span class="pl-c1">fill</span>(c);
+  <span class="pl-c1">ellipse</span>(<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">300</span>, <span class="pl-c1">300</span>);
+}</pre></div>
+
+<h3>
+<a id="android-sensor" class="anchor" href="#android-sensor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Android Sensor:</h3>
+
+<p>There is a class named <code>AndroidSensor</code> in this lib. And there are <strong>8</strong> sensors from android phone. The users get sensor type in class named <code>SensorType</code>. </p>
+
+<ul>
+<li>SensorType.TYPE_ACCELEROMETER </li>
+<li>SensorType.TYPE_LIGHT </li>
+<li>SensorType.TYPE_ORIENTATION </li>
+<li>SensorType.TYPE_PROXIMITY </li>
+<li>SensorType.TYPE_TEMPERATURE </li>
+<li>SensorType.TYPE_PRESSURE </li>
+<li>SensorType.TYPE_GYROSCOPE </li>
+<li>SensorType.TYPE_MAGNETIC_FIELD </li>
+</ul>
+
+<p><strong>1.  a example to get android sensor values:</strong></p>
+
+<p><img src="https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/sensor_data.gif" alt="android sensor data"></p>
+
+<div class="highlight highlight-source-processing"><pre><span class="pl-k">import</span> <span class="pl-smi">com.onlylemi.processing.android.capture.*</span>;
+
+<span class="pl-k">AndroidSensor</span> as;
+
+<span class="pl-k">void</span> <span class="pl-en">setup</span>() {
+  <span class="pl-c1">size</span>(<span class="pl-c1">720</span>, <span class="pl-c1">480</span>);
+  <span class="pl-c1">background</span>(<span class="pl-c1">0</span>);
+
+  as <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-k">AndroidSensor</span>(<span class="pl-c1">0</span>);
+  as<span class="pl-k">.</span>start();
+}
+
+<span class="pl-k">void</span> <span class="pl-en">draw</span>() {
+  <span class="pl-c1">background</span>(<span class="pl-c1">0</span>);
+  <span class="pl-c1">fill</span>(<span class="pl-c1">255</span>);
+  <span class="pl-c1">textSize</span>(<span class="pl-c1">15</span>);
+
+  <span class="pl-c1">text</span>(<span class="pl-k">SensorType</span><span class="pl-c1"><span class="pl-k">.</span>TYPE_ACCELEROMETER</span> <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span> : <span class="pl-pds">"</span></span>, <span class="pl-c1">60</span>, <span class="pl-c1">50</span>);
+  <span class="pl-k">float</span>[] values1 <span class="pl-k">=</span> as<span class="pl-k">.</span>getAccelerometerSensorValues();
+  <span class="pl-c">//float[] values1 = as.getSensorValues(SensorType.TYPE_ACCELEROMETER);</span>
+  <span class="pl-c1">text</span>(<span class="pl-s"><span class="pl-pds">"</span>X : <span class="pl-pds">"</span></span> <span class="pl-k">+</span> values1[<span class="pl-c1">0</span>], <span class="pl-c1">250</span>, <span class="pl-c1">50</span>);
+  <span class="pl-c1">text</span>(<span class="pl-s"><span class="pl-pds">"</span>Y : <span class="pl-pds">"</span></span> <span class="pl-k">+</span> values1[<span class="pl-c1">1</span>], <span class="pl-c1">400</span>, <span class="pl-c1">50</span>);
+  <span class="pl-c1">text</span>(<span class="pl-s"><span class="pl-pds">"</span>Z : <span class="pl-pds">"</span></span> <span class="pl-k">+</span> values1[<span class="pl-c1">2</span>], <span class="pl-c1">550</span>, <span class="pl-c1">50</span>);
+
+  <span class="pl-c1">text</span>(<span class="pl-k">SensorType</span><span class="pl-c1"><span class="pl-k">.</span>TYPE_ORIENTATION</span> <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span> : <span class="pl-pds">"</span></span>, <span class="pl-c1">60</span>, <span class="pl-c1">100</span>);
+  <span class="pl-k">float</span>[] values2 <span class="pl-k">=</span> as<span class="pl-k">.</span>getOrientationSensorValues();
+  <span class="pl-c">//float[] values2 = as.getSensorValues(SensorType.TYPE_ORIENTATION);</span>
+  <span class="pl-c1">text</span>(<span class="pl-s"><span class="pl-pds">"</span>X : <span class="pl-pds">"</span></span> <span class="pl-k">+</span> values2[<span class="pl-c1">0</span>], <span class="pl-c1">250</span>, <span class="pl-c1">100</span>);
+  <span class="pl-c1">text</span>(<span class="pl-s"><span class="pl-pds">"</span>Y : <span class="pl-pds">"</span></span> <span class="pl-k">+</span> values2[<span class="pl-c1">1</span>], <span class="pl-c1">400</span>, <span class="pl-c1">100</span>);
+  <span class="pl-c1">text</span>(<span class="pl-s"><span class="pl-pds">"</span>Z : <span class="pl-pds">"</span></span> <span class="pl-k">+</span> values2[<span class="pl-c1">2</span>], <span class="pl-c1">550</span>, <span class="pl-c1">100</span>);
+
+  <span class="pl-c1">text</span>(<span class="pl-k">SensorType</span><span class="pl-c1"><span class="pl-k">.</span>TYPE_MAGNETIC_FIELD</span> <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span> : <span class="pl-pds">"</span></span>, <span class="pl-c1">60</span>, <span class="pl-c1">150</span>);
+  <span class="pl-k">float</span>[] values3 <span class="pl-k">=</span> as<span class="pl-k">.</span>getMagneticFieldSensorValues();
+  <span class="pl-c">//float[] values3 = as.getSensorValues(SensorType.TYPE_MAGNETIC_FIELD);</span>
+  <span class="pl-c1">text</span>(<span class="pl-s"><span class="pl-pds">"</span>X : <span class="pl-pds">"</span></span> <span class="pl-k">+</span> values3[<span class="pl-c1">0</span>], <span class="pl-c1">250</span>, <span class="pl-c1">150</span>);
+  <span class="pl-c1">text</span>(<span class="pl-s"><span class="pl-pds">"</span>Y : <span class="pl-pds">"</span></span> <span class="pl-k">+</span> values3[<span class="pl-c1">1</span>], <span class="pl-c1">400</span>, <span class="pl-c1">150</span>);
+  <span class="pl-c1">text</span>(<span class="pl-s"><span class="pl-pds">"</span>Z : <span class="pl-pds">"</span></span> <span class="pl-k">+</span> values3[<span class="pl-c1">2</span>], <span class="pl-c1">550</span>, <span class="pl-c1">150</span>);
+
+  <span class="pl-c1">text</span>(<span class="pl-k">SensorType</span><span class="pl-c1"><span class="pl-k">.</span>TYPE_GYROSCOPE</span> <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span> : <span class="pl-pds">"</span></span>, <span class="pl-c1">60</span>, <span class="pl-c1">200</span>);
+  <span class="pl-k">float</span>[] values4 <span class="pl-k">=</span> as<span class="pl-k">.</span>getGyroscopeSensorValues();
+  <span class="pl-c">//float[] values4 = as.getSensorValues(SensorType.TYPE_GYROSCOPE);</span>
+  <span class="pl-c1">text</span>(<span class="pl-s"><span class="pl-pds">"</span>X : <span class="pl-pds">"</span></span> <span class="pl-k">+</span> values4[<span class="pl-c1">0</span>], <span class="pl-c1">250</span>, <span class="pl-c1">200</span>);
+  <span class="pl-c1">text</span>(<span class="pl-s"><span class="pl-pds">"</span>Y : <span class="pl-pds">"</span></span> <span class="pl-k">+</span> values4[<span class="pl-c1">1</span>], <span class="pl-c1">400</span>, <span class="pl-c1">200</span>);
+  <span class="pl-c1">text</span>(<span class="pl-s"><span class="pl-pds">"</span>Z : <span class="pl-pds">"</span></span> <span class="pl-k">+</span> values4[<span class="pl-c1">2</span>], <span class="pl-c1">550</span>, <span class="pl-c1">200</span>);
+
+  <span class="pl-c1">text</span>(<span class="pl-k">SensorType</span><span class="pl-c1"><span class="pl-k">.</span>TYPE_LIGHT</span> <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span> : <span class="pl-pds">"</span></span>, <span class="pl-c1">60</span>, <span class="pl-c1">250</span>);
+  <span class="pl-k">float</span> values5 <span class="pl-k">=</span> as<span class="pl-k">.</span>getLightSensorValues();
+  <span class="pl-c">//float values5 = as.getSensorValues(SensorType.TYPE_LIGHT)[0];</span>
+  <span class="pl-c1">text</span>(<span class="pl-s"><span class="pl-pds">"</span>level : <span class="pl-pds">"</span></span> <span class="pl-k">+</span> values5, <span class="pl-c1">250</span>, <span class="pl-c1">250</span>);
+
+  <span class="pl-c1">text</span>(<span class="pl-k">SensorType</span><span class="pl-c1"><span class="pl-k">.</span>TYPE_PROXIMITY</span> <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span> : <span class="pl-pds">"</span></span>, <span class="pl-c1">60</span>, <span class="pl-c1">300</span>);
+  <span class="pl-k">float</span> values6 <span class="pl-k">=</span> as<span class="pl-k">.</span>getProximitySensorValues();
+  <span class="pl-c">//float values6 = as.getSensorValues(SensorType.TYPE_PROXIMITY)[0];</span>
+  <span class="pl-c1">text</span>(<span class="pl-s"><span class="pl-pds">"</span>distance : <span class="pl-pds">"</span></span> <span class="pl-k">+</span> values6, <span class="pl-c1">250</span>, <span class="pl-c1">300</span>);
+
+  <span class="pl-c1">text</span>(<span class="pl-k">SensorType</span><span class="pl-c1"><span class="pl-k">.</span>TYPE_PRESSURE</span> <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span> : <span class="pl-pds">"</span></span>, <span class="pl-c1">60</span>, <span class="pl-c1">350</span>);
+  <span class="pl-k">float</span> values7 <span class="pl-k">=</span> as<span class="pl-k">.</span>getPressureSensorValues();
+  <span class="pl-c">//float[] values7 = as.getSensorValues(SensorType.TYPE_PRESSURE);</span>
+  <span class="pl-c1">text</span>(<span class="pl-s"><span class="pl-pds">"</span>pressure : <span class="pl-pds">"</span></span> <span class="pl-k">+</span> values7, <span class="pl-c1">250</span>, <span class="pl-c1">350</span>);
+
+  <span class="pl-c1">text</span>(<span class="pl-k">SensorType</span><span class="pl-c1"><span class="pl-k">.</span>TYPE_TEMPERATURE</span> <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span> : <span class="pl-pds">"</span></span>, <span class="pl-c1">60</span>, <span class="pl-c1">400</span>);
+  <span class="pl-k">float</span> values8 <span class="pl-k">=</span> as<span class="pl-k">.</span>getTemperatureSensorValues();
+  <span class="pl-c">//float values8 = as.getSensorValues(SensorType.TYPE_TEMPERATURE);</span>
+  <span class="pl-c1">text</span>(<span class="pl-s"><span class="pl-pds">"</span>temperature : <span class="pl-pds">"</span></span> <span class="pl-k">+</span> values8, <span class="pl-c1">250</span>, <span class="pl-c1">400</span>);
+}</pre></div>
+
+<h2></h2>
+
+<p><strong>2.  a example to use android sensor values:</strong></p>
+
+<p><img src="https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/sensor_color.gif" alt="android sensor color"></p>
+
+<div class="highlight highlight-source-processing"><pre><span class="pl-k">import</span> <span class="pl-smi">com.onlylemi.processing.android.capture.*</span>;
+
+<span class="pl-k">AndroidSensor</span> as;
+
+<span class="pl-k">void</span> <span class="pl-en">setup</span>() {
+  <span class="pl-c1">size</span>(<span class="pl-c1">720</span>, <span class="pl-c1">480</span>);
+
+  <span class="pl-c1">background</span>(<span class="pl-c1">0</span>);
+
+  as <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-k">AndroidSensor</span>(<span class="pl-c1">0</span>);
+  as<span class="pl-k">.</span>start();
+}
+
+<span class="pl-k">void</span> <span class="pl-en">draw</span>() {
+  <span class="pl-c">// get accelerometer sensor value</span>
+  <span class="pl-c">//float[] values = as.getSensorValues(SensorType.TYPE_ACCELEROMETER);</span>
+  <span class="pl-k">float</span>[] values <span class="pl-k">=</span> as<span class="pl-k">.</span>getAccelerometerSensorValues();
+  <span class="pl-k">float</span> x <span class="pl-k">=</span> values[<span class="pl-c1">0</span>];
+  <span class="pl-k">float</span> y <span class="pl-k">=</span> values[<span class="pl-c1">1</span>];
+  <span class="pl-k">float</span> z <span class="pl-k">=</span> values[<span class="pl-c1">2</span>];
+
+  <span class="pl-c1">println</span>(values);
+
+  <span class="pl-k">int</span> r <span class="pl-k">=</span> (<span class="pl-k">int</span>) (<span class="pl-c1">11.0f</span> <span class="pl-k">*</span> (<span class="pl-c1">11.0f</span> <span class="pl-k">+</span> x));
+  <span class="pl-k">int</span> g <span class="pl-k">=</span> (<span class="pl-k">int</span>) (<span class="pl-c1">11.0f</span> <span class="pl-k">*</span> (<span class="pl-c1">11.0f</span> <span class="pl-k">+</span> y));
+  <span class="pl-k">int</span> b <span class="pl-k">=</span> (<span class="pl-k">int</span>) (<span class="pl-c1">11.0f</span> <span class="pl-k">*</span> (<span class="pl-c1">11.0f</span> <span class="pl-k">+</span> z));
+
+  <span class="pl-c">// background</span>
+  <span class="pl-c1">noStroke</span>();
+  <span class="pl-c1">fill</span>(r, g, b, <span class="pl-c1">25</span>);
+  <span class="pl-c1">rect</span>(<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-smi">width</span>, <span class="pl-smi">height</span>);
+
+  <span class="pl-c">// 3 circles</span>
+  <span class="pl-k">float</span> x1 <span class="pl-k">=</span> ((<span class="pl-k">int</span>) (<span class="pl-smi">width</span> <span class="pl-k">/</span> <span class="pl-c1">20</span> <span class="pl-k">*</span> (<span class="pl-c1">9.5f</span> <span class="pl-k">+</span> (<span class="pl-c1">1.0f</span>) <span class="pl-k">*</span> y)));
+  <span class="pl-k">float</span> y1 <span class="pl-k">=</span> ((<span class="pl-k">int</span>) (<span class="pl-smi">height</span> <span class="pl-k">/</span> <span class="pl-c1">12</span> <span class="pl-k">*</span> (x <span class="pl-k">+</span> <span class="pl-c1">6.0f</span>)));
+  <span class="pl-c1">fill</span>(<span class="pl-c1">255</span>, <span class="pl-c1">0</span>, <span class="pl-c1">0</span>);
+  <span class="pl-c1">ellipse</span>(x1, y1, <span class="pl-c1">100</span>, <span class="pl-c1">100</span>);
+
+  <span class="pl-k">float</span> x2 <span class="pl-k">=</span> ((<span class="pl-k">int</span>) (<span class="pl-smi">width</span> <span class="pl-k">/</span> <span class="pl-c1">20</span> <span class="pl-k">*</span> (<span class="pl-c1">9.5f</span> <span class="pl-k">+</span> (<span class="pl-k">-</span><span class="pl-c1">1.0f</span>) <span class="pl-k">*</span> x)));
+  <span class="pl-k">float</span> y2 <span class="pl-k">=</span> ((<span class="pl-k">int</span>) (<span class="pl-smi">height</span> <span class="pl-k">/</span> <span class="pl-c1">12</span> <span class="pl-k">*</span> (y <span class="pl-k">+</span> <span class="pl-c1">6.0f</span>)));
+  <span class="pl-c1">fill</span>(<span class="pl-c1">0</span>, <span class="pl-c1">255</span>, <span class="pl-c1">0</span>);
+  <span class="pl-c1">ellipse</span>(x2, y2, <span class="pl-c1">100</span>, <span class="pl-c1">100</span>);
+
+  <span class="pl-k">float</span> x3 <span class="pl-k">=</span> ((<span class="pl-k">int</span>) (<span class="pl-smi">width</span> <span class="pl-k">/</span> <span class="pl-c1">20</span> <span class="pl-k">*</span> (<span class="pl-c1">9.5f</span> <span class="pl-k">+</span> (<span class="pl-c1">1.0f</span>) <span class="pl-k">*</span> x)));
+  <span class="pl-k">float</span> y3 <span class="pl-k">=</span> ((<span class="pl-k">int</span>) (<span class="pl-smi">height</span> <span class="pl-k">/</span> <span class="pl-c1">12</span> <span class="pl-k">*</span> (y <span class="pl-k">+</span> <span class="pl-c1">6.0f</span>)));
+  <span class="pl-c1">fill</span>(<span class="pl-c1">0</span>, <span class="pl-c1">0</span>, <span class="pl-c1">255</span>);
+  <span class="pl-c1">ellipse</span>(x3, y3, <span class="pl-c1">100</span>, <span class="pl-c1">100</span>);
+}</pre></div>
+
+<h2>
+<a id="contact" class="anchor" href="#contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CONTACT</h2>
+
+<p><strong>Eamil:</strong> onlylemi.com(AT)gmail.com</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/onlylemi/processing-android-capture">AndroidCapture For Processing</a> is maintained by <a href="https://github.com/onlylemi">onlylemi</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
