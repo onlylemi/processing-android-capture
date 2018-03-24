@@ -1,42 +1,33 @@
 # AndroidCapture For Processing
 
-**This library tries to transfer data between [Processing](https://processing.org) and [Android](https://android.com).** 
+> [**中文版介绍**](README-zh.md)
+
+**This library tries to transfer data between [Processing](https://processing.org) and [Android](https://android.com).**
 
 I make a android app to capture the real-time video from `"Android Camera"` and the real-time data from `"Android Sensor"` through the socket to the server (processing server) with `WiFi`. The users use this lib to get phone camera frame and sensors data in processing, then can do some interesting things. 
- 
-**Chinese Users** : Please look [Chinese Introduce](https://onlylemi.github.io/projects/processing-android-capture)
- 
-> ### NOTICE
-**The current version is "2.0.1". Because of some library rules from processing.org, I only update some class name and delete 'P'. And other thing is same.** 
-> 
-* PAndroidCamera --> AndroidCamera
-* PAndroidSensor --> AndroidSensor
-* PSensor --> Sensor
-* PSensorType --> SensorType
 
 Welcome to try it and if there is a problem, please contact me or [new a issues](https://github.com/onlylemi/processing-android-capture/issues/new). 
 
 ## Android App
+
  **Repository** :  [https://github.com/onlylemi/AndroidCapture](https://github.com/onlylemi/AndroidCapture).  develope in [IntelliJ IDEA](https://www.jetbrains.com/idea/).  
  **My test phone** : [meilan note2](http://www.meizu.com/products/meilannote2/spec.html) and `android5.1`
 
-## DOWNLOAD
-**Latest release**: [v2.0.1](https://github.com/onlylemi/processing-android-capture/releases)
-
-
-
 ## Installation
+
 * **Lib** Download the [latest library release](https://github.com/onlylemi/processing-android-capture/releases) and follow the steps described in the [Processing wiki](https://github.com/processing/processing/wiki/How-to-Install-a-Contributed-Library).
 * **Android Configuration** 
   * [download](https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/android-apk/PAndroidCapture.apk) and install APK to your mobile phone
   * open this software and slide out from the left side of the screen. You will see the configuration view. And click `Setting IP`, then input `the local address of your computer`. You must ensure that your mobile phone and your computer in the same Wifi.
 
 > ### local address of your computer
+
 * Windows --> look [here](http://www.howtogeek.com/117371/how-to-find-your-computers-private-public-ip-addresses/)
 * Mac --> look [here](http://www.wikihow.com/Find-Your-IP-Address-on-a-Mac)
 * Linux --> look [here](http://www.wikihow.com/Check-the-IP-Address-in-Linux)
   
 ## Folder
+
 * **android-apk**  
   android phone client app in it.  
   wandoujia:[http://www.wandoujia.com/apps/com.onlylemi.android.capture](http://www.wandoujia.com/apps/com.onlylemi.android.capture)
@@ -48,12 +39,13 @@ Welcome to try it and if there is a problem, please contact me or [new a issues]
   The source code of this lib in it.
 
 ## Examples
+
 ### Android Camera: 
+
 * The users use the `getCameraImage()` function to get android client phone camera frame and it will return a `PImage` object in processing. 
 *  The users use the `getColor()` function to get color from android phone camera and it return a `int` object. 
 
-
-**1. A primitive example to get phone camera image :**
+1. A primitive example to get phone camera image
 
 ![android camera](https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/camera_image.gif)
 ```processing
@@ -77,7 +69,7 @@ void draw() {
 
 --
 
-**2. A primitive example to get the middle color of phone camera :**
+2. A primitive example to get the middle color of phone camera
 
 ![android camera color](https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/camera_color.gif)
 ```processing
@@ -104,6 +96,7 @@ void draw() {
 ```
 
 ### Android Sensor: 
+
 There is a class named `AndroidSensor` in this lib. And there are **8** sensors from android phone. The users get sensor type in class named `SensorType`. 
 
  * SensorType.TYPE_ACCELEROMETER 
@@ -116,7 +109,7 @@ There is a class named `AndroidSensor` in this lib. And there are **8** sensors 
  * SensorType.TYPE_MAGNETIC_FIELD 
 
 
-**1.  a example to get android sensor values:**
+1.  a example to get android sensor values
 
 ![android sensor data](https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/sensor_data.gif)
 ```processing
@@ -189,7 +182,7 @@ void draw() {
 
 --
 
-**2.  a example to use android sensor values:**
+2. a example to use android sensor values
 
 ![android sensor color](https://raw.githubusercontent.com/onlylemi/processing-android-capture/master/sensor_color.gif)
 
@@ -243,6 +236,3 @@ void draw() {
   ellipse(x3, y3, 100, 100);
 }
 ```
-
-## CONTACT
-**Eamil:** xiaomi_0623(AT)163.com  
