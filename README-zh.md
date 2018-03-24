@@ -2,10 +2,9 @@
 
 ![Logo](https://raw.githubusercontent.com/onlylemi/res/master/processing-android-capture-logo.gif)
 
-> 
-* 已被 [processing.org](https://processing.org/reference/libraries/) 官方收录
-* 已被 [creativecoding.cn](http://creativecoding.cn/?p=587) 收录
-* 已被 [OF COURSE](http://mp.weixin.qq.com/s?__biz=MzA4NTc5MDU5OQ==&mid=410954063&idx=1&sn=cd94026161ffc4862a4397571041d605&3rd=MzA3MDU4NTYzMw==&scene=6#rd) 收录
+> * 已被 [processing.org](https://processing.org/reference/libraries/) 官方收录
+> * 已被 [creativecoding.cn](http://creativecoding.cn/?p=587) 收录
+> * 已被 [OF COURSE](http://mp.weixin.qq.com/s?__biz=MzA4NTc5MDU5OQ==&mid=410954063&idx=1&sn=cd94026161ffc4862a4397571041d605&3rd=MzA3MDU4NTYzMw==&scene=6#rd) 收录
 
 
 ## Lib介绍
