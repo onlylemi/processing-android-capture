@@ -10,8 +10,8 @@ Welcome to try it and if there is a problem, please contact me or [new a issues]
 
 ## Android App
 
- **Repository** :  [https://github.com/onlylemi/AndroidCapture](https://github.com/onlylemi/AndroidCapture).  develope in [IntelliJ IDEA](https://www.jetbrains.com/idea/).  
- **My test phone** : [meilan note2](http://www.meizu.com/products/meilannote2/spec.html) and `android5.1`
+ - RRPO: [https://github.com/onlylemi/AndroidCapture](https://github.com/onlylemi/AndroidCapture).  develope in [IntelliJ IDEA](https://www.jetbrains.com/idea/).  
+ - TEST: [Meilan Note2](http://www.meizu.com/products/meilannote2/spec.html) and `android5.1`
 
 ## Installation
 
@@ -22,15 +22,14 @@ Welcome to try it and if there is a problem, please contact me or [new a issues]
 
 > ### local address of your computer
 
-* Windows --> look [here](http://www.howtogeek.com/117371/how-to-find-your-computers-private-public-ip-addresses/)
-* Mac --> look [here](http://www.wikihow.com/Find-Your-IP-Address-on-a-Mac)
-* Linux --> look [here](http://www.wikihow.com/Check-the-IP-Address-in-Linux)
+* [Windows](http://www.howtogeek.com/117371/how-to-find-your-computers-private-public-ip-addresses/)
+* [Mac](http://www.wikihow.com/Find-Your-IP-Address-on-a-Mac)
+* [Linux](http://www.wikihow.com/Check-the-IP-Address-in-Linux)
   
 ## Folder
 
 * **android-apk**  
-  android phone client app in it.  
-  wandoujia:[http://www.wandoujia.com/apps/com.onlylemi.android.capture](http://www.wandoujia.com/apps/com.onlylemi.android.capture)
+  android phone client app in it. [DOWNLOAD](android-apk/PAndroidCapture.apk)
 *  **examples**
   There are some primitive examples in it. The users download them and load `.jar` file in the project. The `.jar` file is set the named `'code'` folder.
 *  **library**
